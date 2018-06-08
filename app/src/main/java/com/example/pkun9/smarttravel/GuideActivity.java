@@ -122,7 +122,7 @@ public class GuideActivity extends Activity {
 
     private void launchHomeScreen() {
         introManager.setFirstTimeLaunch(false);
-        startActivity(new Intent(GuideActivity.this, MainActivity.class));
+        startActivity(new Intent(GuideActivity.this, DangNhapActivity.class));
         finish();
     }
 
