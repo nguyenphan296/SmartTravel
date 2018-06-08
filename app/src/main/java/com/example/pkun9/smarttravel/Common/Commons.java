@@ -7,7 +7,9 @@ import android.content.DialogInterface;
 /**
  * @author Quốc Huy
  * @version 1.0.0
- * @description
+ * @description : Cung cấp 2 phương thức để hiển thị và xử lí popup confirm
+ * phương thức 1: popup confirm có 2 button( yes/no) và cung cấp interface tương ứng để xử lí 2 button
+ * phương thức 2: popup confirm
  * @desc Developer NEO Company.
  * @created ${Date}
  * @updated ${Date}
@@ -19,7 +21,6 @@ public class Commons {
     ClickDialog clickDialog;
 
     /**
-     *
      * @param context
      * @param title
      * @param mes
@@ -28,8 +29,8 @@ public class Commons {
      * @param clickDialog
      */
     public static void ShowAlertDialogTwoButton(Context context, String title, String mes,
-                                                               String titleButtonOne, String titleButtonTwo,
-                                                               final ClickDialog clickDialog) {
+                                                String titleButtonOne, String titleButtonTwo,
+                                                final ClickDialog clickDialog) {
         AlertDialog.Builder b = new AlertDialog.Builder(context);
         b.setCancelable(false);
         b.setTitle(title);
@@ -62,7 +63,6 @@ public class Commons {
     }
 
     /**
-     *
      * @param context
      * @param title
      * @param message
