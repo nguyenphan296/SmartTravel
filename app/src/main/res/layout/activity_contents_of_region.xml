@@ -41,10 +41,14 @@
             android:textAllCaps="false"/>
 
     </LinearLayout>
-    <android.support.constraint.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="4">
+        android:layout_weight="4"
+        android:orientation="vertical">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         <ImageView
             android:id="@+id/img_KhachSan1"
             android:layout_width="100dp"
@@ -69,14 +73,70 @@
             app:layout_constraintTop_toBottomOf="@id/tv_TenKhachSan1"
             android:textColor="@color/colorPrimary"/>
         <TextView
-            android:id="@+id/tv_DiaChiKhachSan1"
+            android:id="@+id/tv_DanhGiaKhachSan1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Đánh giá"
+            android:text="Đánh giá :"
             app:layout_constraintLeft_toRightOf="@id/img_KhachSan1"
             app:layout_constraintTop_toBottomOf="@id/tv_XepHangKhachSan1"
             android:textColor="@color/colorPrimary"/>
-
-    </android.support.constraint.ConstraintLayout>
-
+        <TextView
+            android:id="@+id/tv_LoiDanhGia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="“Phòng tuyệt đẹp, nhất là bể bơi”
+“Bữa sáng nghèo nàn”"
+            app:layout_constraintLeft_toRightOf="@id/tv_DanhGiaKhachSan1"
+            app:layout_constraintTop_toBottomOf="@id/tv_XepHangKhachSan1"
+            android:textColor="@color/colorPrimary"/>
+        </android.support.constraint.ConstraintLayout>
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+            <ImageView
+                android:id="@+id/img_KhachSan2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/Khachsan2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                />
+            <TextView
+                android:id="@+id/tv_TenKhachSan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paradise Suites Hotel"
+                app:layout_constraintLeft_toRightOf="@id/img_KhachSan2"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/tv_XepHangKhachSan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xếp Hạng #2"
+                app:layout_constraintLeft_toRightOf="@id/img_KhachSan2"
+                app:layout_constraintTop_toBottomOf="@id/tv_TenKhachSan2"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/tv_DanhGiaKhachSan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đánh giá :"
+                app:layout_constraintLeft_toRightOf="@id/img_KhachSan2"
+                app:layout_constraintTop_toBottomOf="@id/tv_XepHangKhachSan2"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/tv_LoiDanhGiaKhachSan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="“Giường và sạch sẽ”
+“Đồ ăn bữa sáng và tối dở,
+bố trí không khoa học.”"
+                app:layout_constraintLeft_toRightOf="@id/tv_DanhGiaKhachSan2"
+                app:layout_constraintTop_toBottomOf="@id/tv_XepHangKhachSan2"
+                android:textColor="@color/colorPrimary"/>
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
 </LinearLayout>
