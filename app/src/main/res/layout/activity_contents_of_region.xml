@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:src="@drawable/HaLongCover"/>
+    <LinearLayout
+        android:id="@+id/ll_menu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Giới thiệu"
+            android:textAllCaps="false"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Khách sạn"
+            android:textAllCaps="false"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Đồ ăn"
+            android:textAllCaps="false"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Phương tiện"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+        <ImageView
+            android:id="@+id/img_KhachSan1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/Khachsan1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+        <TextView
+            android:id="@+id/tv_TenKhachSan1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wyndham Legend Halong"
+            app:layout_constraintLeft_toRightOf="@id/img_KhachSan1"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/tv_XepHangKhachSan1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xếp Hạng #1"
+            app:layout_constraintLeft_toRightOf="@id/img_KhachSan1"
+            app:layout_constraintTop_toBottomOf="@id/tv_TenKhachSan1"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/tv_DiaChiKhachSan1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đánh giá"
+            app:layout_constraintLeft_toRightOf="@id/img_KhachSan1"
+            app:layout_constraintTop_toBottomOf="@id/tv_XepHangKhachSan1"
+            android:textColor="@color/colorPrimary"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
