@@ -10,9 +10,10 @@
 
     <style name="textView_dangnhap_activity" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:layout_marginLeft">20dp</item>
-        <item name="android:textColor">#000</item>
+        <item name="android:textColor">#ff0</item>
         <item name="android:textSize">20dp</item>
         <item name="android:layout_marginTop">25dp</item>
+        <item name="android:textStyle">bold</item>
 
     </style>
 

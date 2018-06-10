@@ -16,7 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ManHinhHienThiDiaDiemDuLich"></activity>
+        <activity android:name=".SignUpActivity"></activity>
+        <activity
+            android:name=".DangNhapActivity"
+            android:label="Đăng nhập">
+
+
+        </activity>
     </application>
 
 </manifest>
