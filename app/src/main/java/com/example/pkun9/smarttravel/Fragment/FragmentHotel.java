@@ -66,6 +66,8 @@ public class FragmentHotel extends Fragment {
                 "https://pix10.agoda.net/hotelImages/108/108286/108286_17051015570052885131.jpg?s=1024x768",
                 "1.521.095đ"));
         adapterHotel.notifyDataSetChanged();
-
+        listHotel.add(new Hotel("Khách sạn Grand Hạ Long",
+                "https://s3-ap-southeast-1.amazonaws.com/viettrip/Hotels/563/133829_07052013_khach-san-grand-ha-long-3.jpg",
+                "1.206.995"));
     }
 }
