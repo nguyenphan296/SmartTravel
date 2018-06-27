@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <LinearLayout
+
+            android:gravity="center_vertical"
+            android:background="@color/gray"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/txt_language"
+                android:padding="2dp"
+                android:background="@color/white"
+                android:layout_marginRight="1dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:maxLines="2"
+                android:layout_weight="1"
+                android:text="Ngôn ngữ"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:padding="2dp"
+                android:background="@color/white"
+                android:layout_marginRight="1dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:maxLines="2"
+                android:layout_weight="1"
+                android:text="Địa điểm"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:padding="2dp"
+                android:background="@color/white"
+                android:layout_marginRight="1dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:maxLines="2"
+                android:layout_weight="1"
+                android:text="Khách sạn"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:padding="2dp"
+                android:background="@color/white"
+                android:layout_marginRight="1dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:maxLines="2"
+                android:layout_weight="1"
+                android:text="Nhà hàng"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:padding="2dp"
+                android:background="@color/white"
+                android:layout_marginRight="1dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:maxLines="2"
+                android:layout_weight="1"
+                android:text="Cafe-Drink"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:padding="2dp"
+                android:background="@color/white"
+                android:layout_marginRight="1dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:maxLines="2"
+                android:layout_weight="1"
+                android:text="Taxi"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:padding="2dp"
+                android:background="@color/white"
+                android:layout_marginRight="1dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:maxLines="2"
+                android:layout_weight="1"
+                android:text="Mua sắm"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:padding="2dp"
+                android:background="@color/white"
+                android:layout_marginRight="1dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:maxLines="2"
+                android:layout_weight="1"
+                android:text="Dịch vụ"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <View
+            android:background="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    <FrameLayout
+        android:background="@color/white"
+        android:id="@+id/frame_all_service"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</LinearLayout>

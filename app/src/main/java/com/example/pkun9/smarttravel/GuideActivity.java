@@ -18,6 +18,8 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.pkun9.smarttravel.Activity.MainActivity;
+
 public class GuideActivity extends Activity {
     private ViewPager viewPager;
     private MyViewPagerAdapter myViewPagerAdapter;
@@ -122,7 +124,7 @@ public class GuideActivity extends Activity {
 
     private void launchHomeScreen() {
         introManager.setFirstTimeLaunch(false);
-        startActivity(new Intent(GuideActivity.this, DangNhapActivity.class));
+        startActivity(new Intent(GuideActivity.this, MainActivity.class));
         finish();
     }
 

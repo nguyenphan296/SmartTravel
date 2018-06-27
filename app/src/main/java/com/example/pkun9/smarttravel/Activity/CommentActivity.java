@@ -1,13 +1,15 @@
-package com.example.pkun9.smarttravel;
+package com.example.pkun9.smarttravel.Activity;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.TextClock;
+
+import com.example.pkun9.smarttravel.Adapter.CommentAdapter;
+import com.example.pkun9.smarttravel.Model.CommentModel;
+import com.example.pkun9.smarttravel.R;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

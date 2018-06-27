@@ -1,8 +1,4 @@
-package com.example.pkun9.smarttravel;
-
-import android.widget.TextClock;
-
-import java.util.Date;
+package com.example.pkun9.smarttravel.Model;
 
 /**
  * @author Nguyễn Đức Cảnh
