@@ -30,10 +30,19 @@ import java.util.List;
 public class AdapterHotel extends RecyclerView.Adapter<AdapterHotel.HotelViewHolder> {
     private Context mContext;
     private List<Hotel> listHotel;
+    private ItemClickListener itemClickListener;
 
     public AdapterHotel(Context mContext, List<Hotel> listHotel) {
         this.mContext = mContext;
         this.listHotel = listHotel;
+    }
+
+    public ItemClickListener getItemClickListener() {
+        return itemClickListener;
+    }
+
+    public void setItemClickListener(ItemClickListener itemClickListener) {
+        this.itemClickListener = itemClickListener;
     }
 
     @NonNull
@@ -57,7 +66,7 @@ public class AdapterHotel extends RecyclerView.Adapter<AdapterHotel.HotelViewHol
         return listHotel.size();
     }
 
-    public class HotelViewHolder extends RecyclerView.ViewHolder {
+    public class HotelViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         TextView txt_name_hotel;
         ImageView img_hotel;
         TextView txt_price;
@@ -67,6 +76,12 @@ public class AdapterHotel extends RecyclerView.Adapter<AdapterHotel.HotelViewHol
             txt_name_hotel = itemView.findViewById(R.id.txt_name_hotel);
             img_hotel = itemView.findViewById(R.id.img_hotel);
             txt_price = itemView.findViewById(R.id.txt_price);
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v) {
+            itemClickListener.onClickItem(getLayoutPosition(),listHotel.get(getLayoutPosition()));
         }
     }
 }

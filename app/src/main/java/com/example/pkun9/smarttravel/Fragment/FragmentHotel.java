@@ -9,13 +9,16 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.example.pkun9.smarttravel.Adapter.AdapterHotel;
+import com.example.pkun9.smarttravel.Common.ItemClickListener;
 import com.example.pkun9.smarttravel.Model.Hotel;
 import com.example.pkun9.smarttravel.R;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.jar.Attributes;
 
 /**
  * @author Phạm Công Thành
@@ -57,6 +60,13 @@ public class FragmentHotel extends Fragment {
         recycle_hotel.setAdapter(adapterHotel);
         adapterHotel.notifyDataSetChanged();
 
+        adapterHotel.setItemClickListener(new ItemClickListener() {
+            @Override
+            public void onClickItem(int position, Object item) {
+                Hotel hotel = (Hotel) item;
+                Toast.makeText(getActivity(),hotel.getsName(), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
     private void initData() {
         listHotel.add(new Hotel("Wyndham Legend Halong",
@@ -68,6 +78,6 @@ public class FragmentHotel extends Fragment {
         adapterHotel.notifyDataSetChanged();
         listHotel.add(new Hotel("Khách sạn Grand Hạ Long",
                 "https://s3-ap-southeast-1.amazonaws.com/viettrip/Hotels/563/133829_07052013_khach-san-grand-ha-long-3.jpg",
-                "1.206.995"));
+                "1.206.995đ"));
     }
 }
