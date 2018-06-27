@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.pkun9.smarttravel.Fragment.FragmentDiaDiem;
 import com.example.pkun9.smarttravel.Fragment.FragmentHotel;
 import com.example.pkun9.smarttravel.Fragment.FragmentLanguage;
 import com.example.pkun9.smarttravel.Fragment.FragmentRestaurant;
@@ -27,9 +28,11 @@ import com.example.pkun9.smarttravel.R;
  * @since 1.0
  */
 public class ActivityAllService extends AppCompatActivity {
-    TextView txt_language;
+    //TextView txt_language;
     TextView txt_restaurant;
     TextView txt_hotel;
+    TextView txt_language,txt_DiaDiem;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -67,6 +70,14 @@ public class ActivityAllService extends AppCompatActivity {
                 txt_restaurant.setBackgroundResource(R.color.blue);
             }
         });
+        txt_DiaDiem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment fragment = new FragmentDiaDiem();
+                add_fragment(fragment);
+                txt_DiaDiem.setBackgroundResource(R.color.blue);
+            }
+        });
     }
 
     private void add_fragment(Fragment fragment) {
@@ -80,5 +91,6 @@ public class ActivityAllService extends AppCompatActivity {
         txt_language = findViewById(R.id.txt_language);
         txt_hotel = findViewById(R.id.txt_hotel);
         txt_restaurant=findViewById(R.id.txt_restaurant);
+        txt_DiaDiem = findViewById(R.id.txtDiaDiem);
     }
 }

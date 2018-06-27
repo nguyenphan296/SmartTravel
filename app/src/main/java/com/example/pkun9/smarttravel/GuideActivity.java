@@ -1,3 +1,4 @@
+/*
 package com.example.pkun9.smarttravel;
 
 import android.app.Activity;
@@ -158,9 +159,11 @@ public class GuideActivity extends Activity {
         }
     };
 
-    /**
+    */
+/**
      * Making notification bar transparent
-     */
+     *//*
+
     private void changeStatusBarColor() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             Window window = getWindow();
@@ -169,9 +172,11 @@ public class GuideActivity extends Activity {
         }
     }
 
-    /**
+    */
+/**
      * View pager adapter
-     */
+     *//*
+
     public class MyViewPagerAdapter extends PagerAdapter {
         private LayoutInflater layoutInflater;
 
@@ -206,3 +211,4 @@ public class GuideActivity extends Activity {
         }
     }
 }
+*/
