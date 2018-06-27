@@ -25,6 +25,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent" />
             <TextView
+                android:id="@+id/txtDiaDiem"
                 android:padding="2dp"
                 android:background="@color/white"
                 android:layout_marginRight="1dp"
