@@ -12,13 +12,13 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.pkun9.smarttravel.Common.ItemClickListener;
-import com.example.pkun9.smarttravel.Model.Language;
+
 import com.example.pkun9.smarttravel.Model.Restaurant;
 import com.example.pkun9.smarttravel.R;
 
 import java.util.List;
 
-import de.hdodenhof.circleimageview.CircleImageView;
+
 
 /**
  * @author Nguyễn Đức Cảnh
