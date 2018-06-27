@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="3"
-        android:src="@drawable/HaLongCover"/>
+        android:src="@drawable/halongcover"/>
     <LinearLayout
         android:id="@+id/ll_menu"
         android:layout_width="match_parent"
@@ -53,7 +53,7 @@
             android:id="@+id/img_KhachSan1"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/Khachsan1"
+            android:src="@drawable/khachsan1"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             />
@@ -99,7 +99,7 @@
                 android:id="@+id/img_KhachSan2"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/Khachsan2"
+                android:src="@drawable/khachsan2"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 />
