@@ -11,9 +11,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.pkun9.smarttravel.Adapter.AdapterLanguage;
+
 import com.example.pkun9.smarttravel.Adapter.AdapterRestaurant;
-import com.example.pkun9.smarttravel.Model.Language;
+
 import com.example.pkun9.smarttravel.Model.Restaurant;
 import com.example.pkun9.smarttravel.R;
 
@@ -61,7 +61,6 @@ public class FragmentRestaurant extends Fragment {
         lisRestaurant =new ArrayList<>();
         adapterRestaurant = new AdapterRestaurant(getContext(), lisRestaurant);
         mLayoutManager = new GridLayoutManager(getContext(), 1);
-
         recycle_restaurant.setHasFixedSize(true);
         recycle_restaurant.setLayoutManager(mLayoutManager);
         recycle_restaurant.setItemAnimator(new DefaultItemAnimator());

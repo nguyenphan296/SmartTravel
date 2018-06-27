@@ -27,6 +27,7 @@ import com.example.pkun9.smarttravel.R;
  */
 public class ActivityAllService extends AppCompatActivity {
     TextView txt_language;
+    TextView txt_restaurant;
     TextView txt_hotel;
 
     @Override
@@ -57,6 +58,14 @@ public class ActivityAllService extends AppCompatActivity {
                 txt_hotel.setBackgroundResource(R.color.blue);
             }
         });
+        txt_restaurant.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment fragment = new FragmentHotel();
+                add_fragment(fragment);
+                txt_restaurant.setBackgroundResource(R.color.blue);
+            }
+        });
     }
 
     private void add_fragment(Fragment fragment) {
@@ -69,5 +78,6 @@ public class ActivityAllService extends AppCompatActivity {
     private void init() {
         txt_language = findViewById(R.id.txt_language);
         txt_hotel = findViewById(R.id.txt_hotel);
+        txt_restaurant=findViewById(R.id.txt_restaurant);
     }
 }
