@@ -41,7 +41,7 @@ public class CommentActivity extends Activity {
         //Tạo đối tượng SimpleDateFormat để định dạng ngày;
         SimpleDateFormat day = new SimpleDateFormat(strDateFormat);
 
-        String strDateFormat24 = "HH:mm:ss a";
+        String strDateFormat24 = "HH:mm:ss";
 
         //Tạo đối tượng SimpleDateFormat với định dạng 24h
         SimpleDateFormat time = new SimpleDateFormat(strDateFormat24);
