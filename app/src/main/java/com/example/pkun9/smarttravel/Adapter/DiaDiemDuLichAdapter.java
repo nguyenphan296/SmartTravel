@@ -12,7 +12,6 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.example.pkun9.smarttravel.Common.ItemClickListener;
 import com.example.pkun9.smarttravel.DiaDiemDuLich;
-import com.example.pkun9.smarttravel.Model.Language;
 import com.example.pkun9.smarttravel.R;
 
 import java.util.List;
@@ -78,11 +77,12 @@ public class DiaDiemDuLichAdapter extends
          imgBaCham = (ImageView) itemView.findViewById(R.id.imgBaCham);
          txtDiaDiem = (TextView) itemView.findViewById(R.id.txtDiaDiem);
          txtGia = (TextView) itemView.findViewById(R.id.txtGia);
+         itemView.setOnClickListener(this);
      }
 
         @Override
         public void onClick(View v) {
-
+            itemClickListener.onClickItem(getLayoutPosition(), listDiaDiemDuLich.get(getAdapterPosition()));
         }
 
         @Override

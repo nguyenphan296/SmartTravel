@@ -28,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText( MainActivity.this, "Bạn nhập thiếu thông tin", Toast.LENGTH_SHORT ).show();
                 } else if (edtUsername.getText().toString().trim().equals( "imic" ) &&
                         edtPassword.getText().toString().trim().equals( "123456" )) {
-                    Intent intent = new Intent( MainActivity.this, DangNhapActivity.class );
+                  /* // Intent intent = new Intent( MainActivity.this, DangNhapActivity.class );
                     startActivity( intent );
-                    finish();
+                    finish();*/
                 }
             }
         } );
