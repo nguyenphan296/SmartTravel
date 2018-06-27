@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.pkun9.smarttravel.Fragment.FragmentHotel;
 import com.example.pkun9.smarttravel.Fragment.FragmentLanguage;
 import com.example.pkun9.smarttravel.R;
 
@@ -26,6 +27,7 @@ import com.example.pkun9.smarttravel.R;
  */
 public class ActivityAllService extends AppCompatActivity {
     TextView txt_language;
+    TextView txt_hotel;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -47,6 +49,14 @@ public class ActivityAllService extends AppCompatActivity {
                 txt_language.setBackgroundResource(R.color.blue);
             }
         });
+        txt_hotel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment fragment = new FragmentHotel();
+                add_fragment(fragment);
+                txt_hotel.setBackgroundResource(R.color.blue);
+            }
+        });
     }
 
     private void add_fragment(Fragment fragment) {
@@ -58,5 +68,6 @@ public class ActivityAllService extends AppCompatActivity {
 
     private void init() {
         txt_language = findViewById(R.id.txt_language);
+        txt_hotel = findViewById(R.id.txt_hotel);
     }
 }
