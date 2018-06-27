@@ -1,7 +1,7 @@
 package com.example.pkun9.smarttravel.Activity;
 
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
 import com.example.pkun9.smarttravel.R;
 
