@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.example.pkun9.smarttravel.Fragment.FragmentHotel;
 import com.example.pkun9.smarttravel.Fragment.FragmentLanguage;
+import com.example.pkun9.smarttravel.Fragment.FragmentRestaurant;
 import com.example.pkun9.smarttravel.R;
 
 /**
@@ -61,7 +62,7 @@ public class ActivityAllService extends AppCompatActivity {
         txt_restaurant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment fragment = new FragmentHotel();
+                Fragment fragment = new FragmentRestaurant();
                 add_fragment(fragment);
                 txt_restaurant.setBackgroundResource(R.color.blue);
             }
