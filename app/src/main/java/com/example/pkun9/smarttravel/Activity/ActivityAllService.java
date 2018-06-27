@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.pkun9.smarttravel.Fragment.FragmentLanguage;
+import com.example.pkun9.smarttravel.Fragment.FragmentRestaurant;
 import com.example.pkun9.smarttravel.R;
 
 /**
@@ -26,6 +27,7 @@ import com.example.pkun9.smarttravel.R;
  */
 public class ActivityAllService extends AppCompatActivity {
     TextView txt_language;
+    TextView txt_restaurant;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -45,6 +47,17 @@ public class ActivityAllService extends AppCompatActivity {
                 add_fragment(fragment);
              //   txt_language.setBackgroundColor(Color.RED);
                 txt_language.setBackgroundResource(R.color.blue);
+
+            }
+        });
+
+        txt_restaurant.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceAsColor")
+            @Override
+            public void onClick(View v) {
+                Fragment fragment = new FragmentRestaurant();
+                add_fragment(fragment);
+                txt_restaurant.setBackgroundResource(R.color.blue);
             }
         });
     }
@@ -58,5 +71,6 @@ public class ActivityAllService extends AppCompatActivity {
 
     private void init() {
         txt_language = findViewById(R.id.txt_language);
+        txt_restaurant = findViewById(R.id.txt_restaurant);
     }
 }
