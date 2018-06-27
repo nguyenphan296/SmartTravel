@@ -10,10 +10,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 
 import com.example.pkun9.smarttravel.Adapter.AdapterRestaurant;
 
+import com.example.pkun9.smarttravel.Common.ItemClickListener;
 import com.example.pkun9.smarttravel.Model.Restaurant;
 import com.example.pkun9.smarttravel.R;
 
@@ -66,6 +68,14 @@ public class FragmentRestaurant extends Fragment {
         recycle_restaurant.setItemAnimator(new DefaultItemAnimator());
         recycle_restaurant.setAdapter(adapterRestaurant);
         adapterRestaurant.notifyDataSetChanged();
+
+        adapterRestaurant.setItemClickListener(new ItemClickListener() {
+            @Override
+            public void onClickItem(int position, Object item) {
+                Restaurant restaurant = (Restaurant) item;
+                Toast.makeText(getContext(), ""+restaurant.getsRestaurant(), Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
     private void initData() {

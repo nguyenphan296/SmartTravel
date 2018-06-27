@@ -93,7 +93,7 @@ public class AdapterRestaurant extends RecyclerView.Adapter<AdapterRestaurant.Re
 
         @Override
         public void onClick(View v) {
-
+            itemClickListener.onClickItem(getLayoutPosition(), lisRestaurant.get(getAdapterPosition()));
         }
 
         @Override
