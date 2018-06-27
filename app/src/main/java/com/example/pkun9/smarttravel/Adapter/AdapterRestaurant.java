@@ -1,7 +1,6 @@
 package com.example.pkun9.smarttravel.Adapter;
 
 import android.content.Context;
-import android.media.Image;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -12,7 +11,6 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.pkun9.smarttravel.Common.ItemClickListener;
-
 import com.example.pkun9.smarttravel.Model.Restaurant;
 import com.example.pkun9.smarttravel.R;
 
@@ -93,7 +91,7 @@ public class AdapterRestaurant extends RecyclerView.Adapter<AdapterRestaurant.Re
 
         @Override
         public void onClick(View v) {
-            itemClickListener.onClickItem(getLayoutPosition(), lisRestaurant.get(getAdapterPosition()));
+            itemClickListener.onClickItem(getLayoutPosition(), lisRestaurant.get(getLayoutPosition()));
         }
 
         @Override

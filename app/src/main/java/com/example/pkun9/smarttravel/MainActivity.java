@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.pkun9.smarttravel.Activity.DangNhapActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     Button btnDangNhap;

@@ -1,4 +1,3 @@
-/*
 package com.example.pkun9.smarttravel;
 
 import android.app.Activity;
@@ -19,7 +18,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.pkun9.smarttravel.Activity.MainActivity;
+import com.example.pkun9.smarttravel.Activity.DangNhapActivity;
 
 public class GuideActivity extends Activity {
     private ViewPager viewPager;
@@ -125,7 +124,7 @@ public class GuideActivity extends Activity {
 
     private void launchHomeScreen() {
         introManager.setFirstTimeLaunch(false);
-        startActivity(new Intent(GuideActivity.this, MainActivity.class));
+        startActivity(new Intent(GuideActivity.this, DangNhapActivity.class));
         finish();
     }
 
@@ -159,10 +158,9 @@ public class GuideActivity extends Activity {
         }
     };
 
-    */
-/**
-     * Making notification bar transparent
-     *//*
+//*
+     /** Making notification bar transparent*/
+
 
     private void changeStatusBarColor() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -172,10 +170,9 @@ public class GuideActivity extends Activity {
         }
     }
 
-    */
-/**
-     * View pager adapter
-     *//*
+//*
+//     * View pager adapter
+
 
     public class MyViewPagerAdapter extends PagerAdapter {
         private LayoutInflater layoutInflater;
@@ -211,4 +208,3 @@ public class GuideActivity extends Activity {
         }
     }
 }
-*/
