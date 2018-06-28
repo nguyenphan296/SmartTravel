@@ -1,10 +1,8 @@
 package com.example.pkun9.smarttravel.Fragment;
 
 
-import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
@@ -12,11 +10,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
-import com.example.pkun9.smarttravel.Adapter.AdapterLanguage;
 import com.example.pkun9.smarttravel.Adapter.DiaDiemDuLichAdapter;
+import com.example.pkun9.smarttravel.Common.ItemClickListener;
 import com.example.pkun9.smarttravel.DiaDiemDuLich;
-import com.example.pkun9.smarttravel.Model.Language;
 import com.example.pkun9.smarttravel.R;
 
 import java.util.ArrayList;
@@ -70,6 +68,14 @@ public class FragmentDiaDiem extends Fragment {
         recycle_DiaDiem.setItemAnimator(new DefaultItemAnimator());
         recycle_DiaDiem.setAdapter(adapterDiaDiem);
         adapterDiaDiem.notifyDataSetChanged();
+
+        adapterDiaDiem.setItemClickListener(new ItemClickListener() {
+            @Override
+            public void onClickItem(int position, Object item) {
+                DiaDiemDuLich obj = (DiaDiemDuLich) item;
+                Toast.makeText(getActivity(),obj.getMoTa(),Toast.LENGTH_LONG).show();
+            }
+        });
     }
     private void initData() {
         lisDiaDiem.add(new DiaDiemDuLich("1", "http://www.halongbayvietnam-cruises.com/halong_bay_private_cruises/image/pr1day.jpg","500","Hạ Long","Giá: 2 triệu"));
