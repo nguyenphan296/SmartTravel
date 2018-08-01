@@ -52,11 +52,9 @@ public class Place_Model {
         return lisVoteDetails;
     }
 
-
     public Place getElementById(Place objT) {
         return null;
     }
-
 
     public boolean InsertElement(Place objT) {
         try {

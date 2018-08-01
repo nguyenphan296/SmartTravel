@@ -30,9 +30,7 @@ public class DbScript {
                 + ")";
         // creating required tables
         db.execSQL(TABLE_PLACE);
-
     }
-
 
     public static void UpdateTable(SQLiteDatabase db) {
         // on upgrade drop older tables

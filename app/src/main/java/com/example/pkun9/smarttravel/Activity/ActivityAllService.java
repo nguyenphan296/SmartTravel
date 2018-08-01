@@ -80,7 +80,6 @@ public class ActivityAllService extends AppCompatActivity {
     }
 
     private void add_fragment(Fragment fragment) {
-
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace( R.id.frame_all_service, fragment );
