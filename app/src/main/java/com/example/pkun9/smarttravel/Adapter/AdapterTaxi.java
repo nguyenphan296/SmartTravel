@@ -38,16 +38,16 @@ public class AdapterTaxi extends RecyclerView.Adapter<AdapterTaxi.TaxiViewHolder
     @NonNull
     @Override
     public TaxiViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from( parent.getContext() ).inflate( R.layout.item_taxi, parent, false );
-        return new TaxiViewHolder( view );
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_taxi, parent, false);
+        return new TaxiViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull TaxiViewHolder holder, int position) {
-        Taxi taxi = taxiList.get( position );
-        holder.txtTenTaxi.setText( taxi.getTen() );
-        holder.txtGiaTaxi.setText( taxi.getGia() );
-        Glide.with( context ).load( taxi.getAnh() ).into( holder.imgAnhTaxi );
+        Taxi taxi = taxiList.get(position);
+        holder.txtTenTaxi.setText(taxi.getTen());
+        holder.txtGiaTaxi.setText(taxi.getGia());
+        Glide.with(context).load(taxi.getAnh()).into(holder.imgAnhTaxi);
 
     }
 
@@ -62,10 +62,10 @@ public class AdapterTaxi extends RecyclerView.Adapter<AdapterTaxi.TaxiViewHolder
         ImageView imgAnhTaxi;
 
         public TaxiViewHolder(View itemView) {
-            super( itemView );
-            txtTenTaxi = (TextView) itemView.findViewById( R.id.txt_taxi_ten );
-            txtGiaTaxi = (TextView) itemView.findViewById( R.id.txt_taxi_gia );
-            imgAnhTaxi = (ImageView) itemView.findViewById( R.id.imghinh );
+            super(itemView);
+            txtTenTaxi = (TextView) itemView.findViewById(R.id.txt_taxi_ten);
+            txtGiaTaxi = (TextView) itemView.findViewById(R.id.txt_taxi_gia);
+            imgAnhTaxi = (ImageView) itemView.findViewById(R.id.imghinh);
         }
     }
 }

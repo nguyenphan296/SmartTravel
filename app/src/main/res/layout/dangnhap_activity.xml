@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-   >
+    android:background="#264d04">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="wrap_content"
@@ -45,7 +45,7 @@
             android:layout_marginTop="15dp"
             android:background="@drawable/edittext_dangnhap_activity"
             android:hint="Nhập vào Username"
-            android:textColorHint="#84ffff"
+            android:textColorHint="@android:color/white"
             app:layout_constraintLeft_toRightOf="@+id/tvUsername"
             app:layout_constraintTop_toBottomOf="@+id/tvdangnhap" />
 
@@ -65,7 +65,7 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/edittext_dangnhap_activity"
             android:hint="Nhập vào Password"
-            android:textColorHint="#84ffff"
+            android:textColorHint="@android:color/white"
             app:layout_constraintLeft_toLeftOf="@+id/edtUsername"
             app:layout_constraintTop_toBottomOf="@+id/tvUsername" />
 
