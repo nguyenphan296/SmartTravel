@@ -75,6 +75,11 @@ public class FragmentDiaDiem extends Fragment {
                 DiaDiemDuLich obj = (DiaDiemDuLich) item;
                 Toast.makeText(getActivity(),obj.getMoTa(),Toast.LENGTH_LONG).show();
             }
+
+            @Override
+            public void onLongClickItem(int position, Object item) {
+
+            }
         });
     }
     private void initData() {

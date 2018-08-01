@@ -18,7 +18,6 @@ import com.example.pkun9.smarttravel.R;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.jar.Attributes;
 
 /**
  * @author Phạm Công Thành
@@ -65,6 +64,11 @@ public class FragmentHotel extends Fragment {
             public void onClickItem(int position, Object item) {
                 Hotel hotel = (Hotel) item;
                 Toast.makeText(getActivity(),hotel.getsName(), Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onLongClickItem(int position, Object item) {
+
             }
         });
     }

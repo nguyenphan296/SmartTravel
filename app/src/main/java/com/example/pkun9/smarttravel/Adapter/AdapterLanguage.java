@@ -18,7 +18,6 @@ import com.example.pkun9.smarttravel.R;
 import java.util.List;
 
 
-
 public class AdapterLanguage extends RecyclerView.Adapter<AdapterLanguage.LanguageViewHoder> {
     private Context mContext;
     private List<Language> lisLanguage;
@@ -49,9 +48,11 @@ public class AdapterLanguage extends RecyclerView.Adapter<AdapterLanguage.Langua
     public void onBindViewHolder(@NonNull LanguageViewHoder holder, int position) {
         Language language = lisLanguage.get(position);
         holder.txt_name_language.setText(language.getsName());
-        Glide.with(mContext).load(language.getsImage()).into(holder.img_flag);
+        Glide.with(mContext)
+                .load(language.getsImage())
+                .into(holder.img_flag);
 
-       // holder.cb_language.setChecked(language.isChecked());
+        // holder.cb_language.setChecked(language.isChecked());
 
     }
 
@@ -60,13 +61,11 @@ public class AdapterLanguage extends RecyclerView.Adapter<AdapterLanguage.Langua
         return lisLanguage.size();
     }
 
-    public class LanguageViewHoder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener {
-
-
+    public class LanguageViewHoder extends
+            RecyclerView.ViewHolder implements
+            View.OnClickListener, View.OnLongClickListener {
         TextView txt_name_language;
-
         CheckBox cb_language;
-
         ImageView img_flag;
 
         public LanguageViewHoder(View itemView) {
@@ -80,12 +79,13 @@ public class AdapterLanguage extends RecyclerView.Adapter<AdapterLanguage.Langua
 
         @Override
         public void onClick(View v) {
-         //   itemClickListener.onClickItem(getLayoutPosition(), lisLanguage.get(getLayoutPosition()));
+            itemClickListener.onClickItem(getLayoutPosition(), lisLanguage.get(getLayoutPosition()));
         }
 
         @Override
         public boolean onLongClick(View v) {
-            return false;
+            itemClickListener.onLongClickItem(getLayoutPosition(), lisLanguage.get(getLayoutPosition()));
+            return true;
         }
     }
 

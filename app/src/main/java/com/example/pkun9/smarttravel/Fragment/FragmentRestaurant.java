@@ -75,6 +75,11 @@ public class FragmentRestaurant extends Fragment {
                 Restaurant restaurant = (Restaurant) item;
                 Toast.makeText(getContext(), ""+restaurant.getsRestaurant(), Toast.LENGTH_SHORT).show();
             }
+
+            @Override
+            public void onLongClickItem(int position, Object item) {
+
+            }
         });
 
     }
